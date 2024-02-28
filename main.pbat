@@ -1,0 +1,10 @@
+def main
+    github_checkout()
+    use(conda)
+    install(mugicli)
+    mkdir listing
+    pyfind C:\ -iname *.dll > listing\dlls.txt
+    pyfind C:\ -iname *.exe > listing\exes.txt
+    github_upload(listing)
+
+github-workflow 1
